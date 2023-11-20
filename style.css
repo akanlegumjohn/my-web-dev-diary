@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-width: 100dvw;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+.container {
+  border: 2px solid rgb(228, 219, 219);
+  border-radius: 10px;
+  padding: 15px;
+  gap: 15px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: cyan;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+p {
+  text-align: center;
+}
+
+.zero--h--offset--v--offset {
+  box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.5);
+}
+
+.positive--h--offset--v--offset {
+  box-shadow: 5px 5px 5px 5px rgba(128, 128, 0, 0.5);
+}
+.negative--h--offset--v--offset {
+  box-shadow: -5px -5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.inset--with--positive--h--offset--v--offset {
+  box-shadow: inset 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.layered--shadow {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.1),
+    0px 4px 8px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+.layered--shadow:hover {
+  color: #000;
+  background-color: #c0c0c0;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15),
+    inset 0px 4px 8px rgba(0, 0, 0, 0.15),
+    inset 0px 8px 16px rgba(0, 0, 0, 0.15);
+  transition: 0.2s;
+  transform: translateY(2px);
+}
+/* .container {
+  background: #dde1e7;
+} */
+.neumorphic--shadow {
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+    10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+
+.neumorphic--container {
+  height: 150px;
+  width: 150px;
+  background: #dde1e7;
+  border-radius: 20px;
+  margin: 20px;
+}
